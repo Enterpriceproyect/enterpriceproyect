@@ -23,7 +23,9 @@ const displayCV = (data) => {
       <img src="${picture}" alt="Profile Picture">
     </div>
     <div class="section">
-      <h3>Estudios Academicos: </h3>
+      
+	  <h1>Programador y diseñador Web </h1>
+	  <h3>Estudios Academicos: </h3>
       <p>Universidad de Edimburgo, 2010-2014</p>
       <p>Terciario Flores Kindom, 2014-2016</p>
    <p> Escuela Primaria del Prado,1986-1989</p>
