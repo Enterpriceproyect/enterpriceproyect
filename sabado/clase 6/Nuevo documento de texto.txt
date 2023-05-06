@@ -1,0 +1,20 @@
+form action 
+
+metodo post
+autocomplete off
+
+label for=
+
+imput type 
+
+
+domicilio
+usuario
+contrase;a
+edadd 18 a 65
+telefono
+correo electronico
+sistema operativo
+
+//
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinculos</title>
+    <!--<link rel="stylesheet" href="css/estilos.css">-->
+
+    <!-- Estilos CSS Internos -->
+    <style>
+        /*Pseudo Clases a Vinculos
+        a:link{
+            color: green;
+            text-decoration:none;
+        }
+
+        a:visited{
+            color: gray;
+            text-decoration: none;
+        }
+
+        a:active{
+            color: black;
+            text-decoration: none;
+        }
+        */
+
+        a{color: black; text-decoration: underline;}
+        a:hover{color: deeppink; text-decoration: none;}
+
+
+        /* Selector de etiqueta */
+        body{
+            width: 100%;
+            height: auto;
+            margin:0;
+           /*background-color:pink;*/
+        }
+
+        p{font-size: 18px; text-decoration:dotted;}
+
+        nav{
+            width:100%;
+            height: 50px;
+            background-color: blueviolet;
+        }
+
+        header{
+            width: 100%;
+            height: 350px;
+            background-color: darkmagenta;
+        }
+
+        header:hover{
+            background-color: deeppink;
+        }
+        
+        main{
+            width: 100%;
+            height: auto;
+            background-color:bisque;
+            padding:35px;
+            border: 5px solid green;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+            margin-top:0;
+        }
+
+        img{
+            width: 150px;
+            height: 100px;
+            border: 2px solid black;
+            box-shadow: 1px 3px 8px black;
+        }
+
+        #aviondos{
+            width: 750px;
+            height: auto;
+            border:none;
+            box-shadow: none;
+        }
+
+        ul{
+            width: 200px;
+            height: auto;
+            margin-bottom: 100px;
+            margin-left: -40px;
+        }
+
+        /*Selector Descendente o específico*/
+        ul li{
+            background-color: gainsboro;
+            width: 200px;
+            margin-bottom: 6px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            list-style: none;           
+        }
+
+        ul a{color: black; text-decoration: none;}
+        ul a:hover{color: black; text-decoration: none;}
+
+
+        footer{
+            width: 100%;
+            height: 400px;
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<nav></nav>
+<header></header>
+
+<main>
+    <h1>Vinculos</h1>
+    <h2>Estos son los dos grupos más importantes</h2>
+
+    <h3>Relativos</h3>
+
+    <p><a href="imagenes/foto1.jpg" target="_blank">Conocé el destino de tus vacaciones.</a> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis sunt vero ea distinctio harum. Mollitia doloribus illo pariatur nostrum neque, ipsa exercitationem voluptates voluptatibus repellendus. Rerum odio vitae cupiditate eum eaque culpa natus quod sunt. Quam veritatis laborum magni autem incidunt blanditiis id consectetur neque nam alias reiciendis corporis ad officia quidem voluptas commodi expedita esse doloremque, harum maxime debitis, temporibus non magnam quaerat! Quo nisi doloribus enim perferendis quas laudantium id, minus, hic sed magni veniam officia, velit fugit? Ut saepe alias quis maiores tempora accusamus impedit corrupti numquam, suscipit, amet voluptatibus? Quaerat repellendus tenetur maiores voluptatibus minima ipsam.</p>
+
+    <p>Conoce tu próximo destino para tus <a href="imagenes/foto2.jpg" target="_blank">vacaciones</a>.</p>
+
+    <img src="imagenes/foto1.jpg" alt="imagen de la piramide del museo del louvre" title="Destino Europeo"> <!-- width="150" -->
+
+    <img src="imagenes/foto2.jpg" alt="Mendoza con un rio y las montañas de fondo" title="Destino Nacional">
+
+
+    <a href="imagenes/foto3.jpg" target="_blank">
+        <img src="imagenes/foto3.jpg" alt="Playa de Brasil" title="Destino Brasil">
+    </a>
+
+    <h3>Absolutos</h3>
+
+    <p>Conoce la web renovada de <a href="https://www.boeing.com/" target="_blank">Boeing</a>.</p>
+
+    <p><a href="https://www.boeing.com/resources/boeingdotcom/commercial/737max/assets/images/737-max10-road_block_1500x410.jpg" target="_blank">Este es el nuevo avión de la empresa Boeing</a>.</p>
+
+    <img src="https://www.boeing.com/resources/boeingdotcom/commercial/737max/assets/images/737-max10-road_block_1500x410.jpg" alt="avión" style="width:600px; height: auto;"> <!-- Estilos CSS En Linea o In Line.-->
+
+    <br><br>
+
+    <img src="https://www.boeing.com/resources/boeingdotcom/commercial/737max/assets/images/737-max10-road_block_1500x410.jpg" alt="avión" id="aviondos">
+
+    <!-- 
+        URL: Uniform Resouce Location
+
+        https://www.boeing.com.ar/737.html
+
+        https://  = Protocolo de transferencia.
+        www       = W3C - Wide World Web
+        .         = Separador
+        boeing    = Dominio o nombre de la "empresa".
+        com       = Company
+        ar        = Dominio regional - uy-cl-ve-col-uk-mx-br-bo
+        /         = intro entrar
+        737.html  = Ruta a un archivo interno.
+    -->
+
+    <hr>
+
+    <h3>Vinculos Anclas</h3>
+
+    <ul>
+        <a href="#tm"><li>Técnicas de maquetado</li></a>
+        <a href="#bp"><li>Buenas prácticas en HTML</li></a>
+        <a href="#ecss"><li>Estilos CSS</li></a>
+    </ul>
+
+    <a id="tm"></a>
+    <h4>Técnicas de maquetado</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur deserunt ipsa, ad voluptatem blanditiis quis sunt delectus voluptate dolorem unde repellendus possimus? Aperiam, voluptatibus nulla quas ullam esse illum ipsum voluptates aut sequi dolorum quos quaerat placeat dolorem vero. Ipsam repellat in reprehenderit fugiat, mollitia repellendus laudantium accusamus nostrum maxime. Molestias ea voluptatum totam corporis minus. Minima ducimus soluta quod placeat quae consectetur quidem illum enim ipsa. Consequatur adipisci necessitatibus fugit temporibus reprehenderit quidem dolores unde voluptatibus, perspiciatis nobis saepe quos nulla ipsam, iusto blanditiis alias pariatur? A minus vero odio accusamus doloribus maxime inventore laboriosam aliquam, eveniet deleniti eum quod placeat optio, animi provident doloremque reiciendis similique? Commodi quasi aperiam maxime? Dolorum libero tenetur nesciunt pariatur minus ullam veritatis cumque ipsum numquam dolor, sapiente cupiditate eaque, sit exercitationem voluptatibus id quos nisi! Ipsam, facilis harum eaque officiis magni possimus porro, consequatur architecto aspernatur voluptatibus alias voluptates soluta aperiam cum maxime corrupti illum in saepe reprehenderit, repellendus eos. Eius, ea est voluptate dignissimos recusandae sit rerum quisquam. Magni iure earum quos tempora perspiciatis deserunt eligendi ea, voluptatibus officia quaerat! Debitis quae minus quo dolor expedita, architecto tempora iusto reiciendis facilis libero sapiente necessitatibus dolorum id et fugiat repellat! Laboriosam.</p>
+
+    <a id="bp"></a><h4>Buenas prácticas en HTML</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur deserunt ipsa, ad voluptatem blanditiis quis sunt delectus voluptate dolorem unde repellendus possimus? Aperiam, voluptatibus nulla quas ullam esse illum ipsum voluptates aut sequi dolorum quos quaerat placeat dolorem vero. Ipsam repellat in reprehenderit fugiat, mollitia repellendus laudantium accusamus nostrum maxime. Molestias ea voluptatum totam corporis minus. Minima ducimus soluta quod placeat quae consectetur quidem illum enim ipsa. Consequatur adipisci necessitatibus fugit temporibus reprehenderit quidem dolores unde voluptatibus, perspiciatis nobis saepe quos nulla ipsam, iusto blanditiis alias pariatur? A minus vero odio accusamus doloribus maxime inventore laboriosam aliquam, eveniet deleniti eum quod placeat optio, animi provident doloremque reiciendis similique? Commodi quasi aperiam maxime? Dolorum libero tenetur nesciunt pariatur minus ullam veritatis cumque ipsum numquam dolor, sapiente cupiditate eaque, sit exercitationem voluptatibus id quos nisi! Ipsam, facilis harum eaque officiis magni possimus porro, consequatur architecto aspernatur voluptatibus alias voluptates soluta aperiam cum maxime corrupti illum in saepe reprehenderit, repellendus eos. Eius, ea est voluptate dignissimos recusandae sit rerum quisquam. Magni iure earum quos tempora perspiciatis deserunt eligendi ea, voluptatibus officia quaerat! Debitis quae minus quo dolor expedita, architecto tempora iusto reiciendis facilis libero sapiente necessitatibus dolorum id et fugiat repellat! Laboriosam.</p>
+
+    <a id="ecss"></a>
+    <h4>Estilos CSS</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur deserunt ipsa, ad voluptatem blanditiis quis sunt delectus voluptate dolorem unde repellendus possimus? Aperiam, voluptatibus nulla quas ullam esse illum ipsum voluptates aut sequi dolorum quos quaerat placeat dolorem vero. Ipsam repellat in reprehenderit fugiat, mollitia repellendus laudantium accusamus nostrum maxime. Molestias ea voluptatum totam corporis minus. Minima ducimus soluta quod placeat quae consectetur quidem illum enim ipsa. Consequatur adipisci necessitatibus fugit temporibus reprehenderit quidem dolores unde voluptatibus, perspiciatis nobis saepe quos nulla ipsam, iusto blanditiis alias pariatur? A minus vero odio accusamus doloribus maxime inventore laboriosam aliquam, eveniet deleniti eum quod placeat optio, animi provident doloremque reiciendis similique? Commodi quasi aperiam maxime? Dolorum libero tenetur nesciunt pariatur minus ullam veritatis cumque ipsum numquam dolor, sapiente cupiditate eaque, sit exercitationem voluptatibus id quos nisi! Ipsam, facilis harum eaque officiis magni possimus porro, consequatur architecto aspernatur voluptatibus alias voluptates soluta aperiam cum maxime corrupti illum in saepe reprehenderit, repellendus eos. Eius, ea est voluptate dignissimos recusandae sit rerum quisquam. Magni iure earum quos tempora perspiciatis deserunt eligendi ea, voluptatibus officia quaerat! Debitis quae minus quo dolor expedita, architecto tempora iusto reiciendis facilis libero sapiente necessitatibus dolorum id et fugiat repellat! Laboriosam. <a href="#up">Volver</a></p>
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>
+
+<!--
+    3 formas CSS
+
+    1- Interna.
+    2- Inline / En linea.
+    3- Externa.
+
+-->
