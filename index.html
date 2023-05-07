@@ -18,6 +18,46 @@
 
 <body>
   
+  <hr><br>
+  <main>
+    <h1>Formulario de contacto</h1>
+
+    <form action="php/enviar.php" method="post" autocomplete="off">
+        <label for="">Nombres y Apellido:</label>
+        <input type="text" name="nombres">
+
+        <label for="">Domicilio</label>
+        <input type="text" name="calle" required>
+
+        <label for="">Usuario:</label>
+        <input type="text" name="usu" placeholder="Alias">           
+              <br>
+        <label for="">Correo electrónico de Gmail:</label>
+        <input type="email" name="correo" required>
+        <br>
+        <input type="password" name="clave" placeholder="Contraseña:">
+        <br>
+        <label for="">Edad (18 a 65):</label>
+        <input type="number" name="edad" min="18" max="65">
+        <br>
+        <label for="">Teléfeno:</label>
+        <input type="tel" name="telefono" maxlength="25" placeholder="Ejemplo: (011) 4444-1234">
+               
+        <br>
+        <textarea name="mensaje" id="msj" cols="35" rows="10" placeholder="Mensaje:"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="ENVIAR MENSAJE">
+        <br>
+        <br>
+        <hr>
+    </form>
+</main>
+
+
+
+
+
     <img src="image/71.jpg" width="300" height="300" alt="Foto de codigo fuente"/>
     
 	 <h2>   Telefono Personal: (868) 641-47597</h2>
