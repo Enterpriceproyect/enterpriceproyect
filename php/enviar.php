@@ -1,15 +1,22 @@
-+<?php 
+<?php 
 
 //Bloque de las Variables
 $nombres=$_POST['nombres'];
 
 $calle=$_POST['calle'];
 
-$phone=$_POST['phone'];
-
 $usu=$_POST['usu'];
 
+$correo=$_POST['correo'];
+
+$clave=$_POST['clave'];
+
+$edad=$_POST['edad'];
+
+$telefono=$_POST['telefono'];
+
 $mensaje=$_POST['mensaje'];
+
 
 
 // Configuramos datos de email
@@ -24,9 +31,15 @@ $cuerpo.="Nombres: ".$nombres."\n";
 
 $cuerpo.="Domicilio: ".$calle."\n";
 
-$cuerpo.="Teléfono: ".$phone."\n";
+$cuerpo.="Alias: ".$usu."\n\n";
 
-$cuerpo.="Contraseña: ".$usu."\n\n";
+$cuerpo.="Correo: ".$correo."\n";
+
+$cuerpo.="Clave: ".$clave."\n";
+
+$cuerpo.="Edad: ".$edad."\n";
+
+$cuerpo.="Telefono: ".$telefono."\n";
 
 $cuerpo.="Comentario: ".$mensaje."\n";
 
